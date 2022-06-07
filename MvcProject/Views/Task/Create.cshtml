@@ -1,0 +1,235 @@
+﻿@model MvcProject.Models.ClassMod
+
+  @* <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <input type = "hidden" asp-for="Id" class="form-control" />
+
+        <div class="form-group">
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="DOB" class="control-label"></label>
+        <input asp-for="DOB" class="form-control" />
+        <span asp-validation-for="DOB" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="Department" class="control-label"></label>
+        <input asp-for="Department" class="form-control" />
+        <span asp-validation-for="Department" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="Designation" class="control-label"></label>
+        <input asp-for="Designation" class="form-control" />
+        <span asp-validation-for="Designation" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="City" class="control-label"></label>
+        <input asp-for="City" class="form-control" />
+        <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label asp-for="ContactNo" class="control-label"></label>
+        <input asp-for="ContactNo" class="form-control" />
+        <span asp-validation-for="ContactNo" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+        </form>*@
+ @* @*  <div class="container">
+        <h3>User Registration</h3>
+        <hr />
+        <form asp-action="Create">
+            <input type="hidden" asp-for="Id" class="form-control" />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label" asp-for = "FirstName"></label>
+                        <input class="form-control" name="FirstName" id="frmFirstName" placeholder="Your FirstName">
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label" asp-for = "LastName"></label>
+                        <input type="text" class="form-control" name="LastName" id="frmLastName" placeholder="Your LastName">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label" asp-for = "Email"></label>
+                        <input type="email" class="form-control" name="Email" id="frmEmail" placeholder="Your Email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label" asp-for = "ContactNo"></label>
+                        <input type="text" class="form-control" maxlength="12" minlength="10" name="ContactNo" id="frmContact" placeholder="Your ContactNo">
+                        <span asp-validation-for="ContactNo" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label" asp-for = "DOB"></label>
+                        <input type="text" class="form-control" name="DOB" id="frmDOB" placeholder="DD/MM/YYYY">
+                        <span asp-validation-for="DOB" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label" asp-for = "Department"></label>
+                        <select class="form-control custom-select" id="frmDepatment" name="Department">
+                            <option value="select">--Select--</option>
+                            <option value="IT">IT</option>
+                            <option value="BPO">BPO</option>
+                            <option value="Management">Management</option>
+                            <option value="Custmore support">Custmore support</option>
+                           
+                        </select>
+                         <span asp-validation-for="Department" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="form-label" asp-for = "Designation"></label>
+                    <select class="form-control custom-select" id="frmDesignation" name="Designation">
+                        <option value="select">--Select--</option>
+                        <option value="Tester">Tester</option>
+                        <option value="QA">QA</option>
+                        <option value="BDA">BDA</option>
+                        <option value="Junior Associate">Junior Associate</option>
+                       
+                    </select>
+                     <span asp-validation-for="Designation" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" asp-for = "City"></label>
+                    <select class="form-control custom-select" id="frmCity" name="City">
+                        <option value="select">--Select--</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Dewas">Dewas</option>
+                        <option value="Ujjain">Ujjain</option>
+                        <option value="Bhopal">Bhopal</option>
+                        
+                    </select>
+                    <span asp-validation-for="City" class="text-danger"></span>
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-10"></div>
+                <div class="col-md-1">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+
+                <div class="col-md-1">
+                   <input type="submit" value="Cancel" asp-action="Index" class="btn btn-secondary" />
+                </div>
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>*@
+
+<form asp-action="Create">
+
+    <div class="form-group">
+        <label class="form-label" asp-for="FirstName"></label>
+        <input class="form-control" asp-for="FirstName">
+        <span class="text-danger" asp-validation-for="FirstName"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="LastName"></label>
+        <input class="form-control" asp-for="LastName">
+        <span class="text-danger" asp-validation-for="LastName"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="Email"></label>
+        <input class="form-control" asp-for="Email">
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="DOB"></label>
+        <input class="form-control" asp-for="DOB">
+        <span class="text-danger" asp-validation-for="DOB"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="ContactNo"></label>
+        <input class="form-control" asp-for="ContactNo">
+        <span class="text-danger" asp-validation-for="ContactNo"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="Designation"></label>
+       @* <input class="form-control" asp-for="Designation">*@
+           <select class="form-control custom-select" id="frmDesignation" name="Designation">
+                        <option value="select">--Select--</option>
+                        <option value="Tester">Tester</option>
+                        <option value="QA">QA</option>
+                        <option value="BDA">BDA</option>
+                        <option value="Junior Associate">Junior Associate</option>
+                       
+                    </select>
+        <span class="text-danger" asp-validation-for="Designation"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="Department"></label>
+        <select class="form-control custom-select" id="frmDepatment" name="Department">
+                            <option value="select">--Select--</option>
+                            <option value="IT">IT</option>
+                            <option value="BPO">BPO</option>
+                            <option value="Management">Management</option>
+                            <option value="Custmore support">Custmore support</option>
+                           
+                        </select>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="City"></label>
+        @*<input class="form-control" asp-for="City">*@
+        <select class="form-control custom-select" id="frmCity" name="City">
+                        <option value="select">--Select--</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Dewas">Dewas</option>
+                        <option value="Ujjain">Ujjain</option>
+                        <option value="Bhopal">Bhopal</option>
+                        
+                    </select>
+        <span class="text-danger" asp-validation-for="City"></span>
+    <div class="row mt-3">
+                <div class="col-md-10"></div>
+                <div class="col-md-1">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+
+                <div class="col-md-1">
+                   <input type="submit" value="Cancel" asp-action="Index" class="btn btn-secondary" />
+                </div>
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+</form>
+
